@@ -33,6 +33,21 @@
   <ItemGroup>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
+    <Compile Include="app\sandbox\mizuno.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\sandbox\toyosato.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\sandbox\ueda.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\sandbox\yoshida.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\sandbox\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
@@ -46,6 +61,7 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
+    <Folder Include="app\sandbox\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />

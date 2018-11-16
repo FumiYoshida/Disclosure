@@ -6,6 +6,7 @@ from django.shortcuts import render
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
+from .sandbox import yoshida, toyosato, mizuno, ueda
 
 def home(request):
     """Renders the home page."""
@@ -45,6 +46,7 @@ def about(request):
         }
     )
 
+
 def sandbox_Yoshida(request):
     """Renders the sandbox page."""
     assert isinstance(request, HttpRequest)
@@ -55,6 +57,7 @@ def sandbox_Yoshida(request):
             'title':'SandBox',
             'message':'It\'s a sandbox of Yoshida.',
             'year':datetime.now().year,
+            'output': yoshida.add(2, 3)
         }
     )
 
