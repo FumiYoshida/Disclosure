@@ -32,6 +32,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app\forms.py" />
+    <Compile Include="app\management\commands\update.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\management\commands\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\management\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\models.py" />
     <Compile Include="app\sandbox\mizuno.py">
       <SubType>Code</SubType>
@@ -60,7 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\management\commands\" />
     <Folder Include="app\migrations\" />
+    <Folder Include="app\management\" />
     <Folder Include="app\sandbox\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
